@@ -20,7 +20,8 @@ def questions():
 
 @app.route("/results")
 def results():
-    sentence = request.args['sentence'] 
+    sentence = request.args['sentence']
+    print sentence
     return render_template("results.html")
 
 
